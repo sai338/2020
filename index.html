@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bootstrap</title>
+    <link rel="icon shortcut" href="./img/favicon.ico">
+    <!-- Bootstrap官方網站 https://getbootstrap.com/ -->
+
+    <!-- 連結Bootstrap.min.css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- TODO: 客製化Bootstrap CSS -->
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <!-- 使用font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+        integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <!-- 使用style.css -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- wow.js -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+    <!-- wow.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <!-- main.js -->
+    <script src="./js/main.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- navbar -->
+    <!-- 使用Boostrap Navbar -->
+    <!-- TODO: 設定Navbar緊貼畫面上緣 -->
+    <!-- TODO: 點擊滾動目標 -->
+    <nav class="navbar navbar-expand-sm navbar-light bg-light fixed-top">
+        <!--logo -->
+        <a class="navbar-brand" href="#">陳柏叡</a>
+        <!-- 手持裝置的導覽按鈕 -->
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+            aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#introSection">自我能耐和嗜好</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#featuresSection">媒體作品</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#reviewsSection">自我介紹</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#gallerySection">產品</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- navbar end -->
+    <!-- header -->
+    <header id="header" class="jumbotron text-center text-white bg-dark">
+        <div class="container animate__animated animate__bounce">
+            <h1>此網頁請不要再臨晨觀看此網頁</h1>
+            <p> </p>
+        </div>
+    </header>
+    <!-- header end -->
+    <!-- introSection -->
+    <!-- TODO: 設定introSection 上下padding為5倍 -->
+    <section id="introSection">
+        <h1 class="section-title text-center text-secondary mb-5">自我能耐和嗜好</h1>
+        <div class="container">
+            <!-- TODO: 修正排版為三項排一排 -->
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="intro-box">
+                        <div class="icon text-primary py-3">
+                            <i class="fas fa-paper-plane fa-5x" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="text-secondary">嗜好</h3>
+                        <div class="intro-line bg-primary"></div>
+                        <p>烏龍麵，咖哩飯，味增食品</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="intro-box">
+                        <div class="icon text-primary py-3">
+                            <i class="fas fa-briefcase fa-5x" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="text-secondary">技術</h3>
+                        <div class="intro-line bg-primary"></div>
+                        <p>製作模型，3D設計，初階Illustrator技術</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="intro-box">
+                        <div class="icon text-primary py-3">
+                            <i class="fas fa-gem fa-5x" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="text-secondary">精通</h3>
+                        <div class="intro-line bg-primary"></div>
+                        <p>AE使用</p>
+                    </div>
+                </div>
+            </div>
+            <!-- TODO: 設定此區塊距離上方5倍margin -->
+            <!-- TODO: 修正排版在md時六個排一排 sm三個排一排 sm以下兩個排一排-->
+            <!--<div class="row">
+                <div class="col-2 text-center">
+                    <i class="fas fa-tree fa-2x text-secondary" aria-hidden="true"></i>
+                    <h5 class="mt-3 text-secondary">Cozy Office</h5>
+                </div>
+                <div class="col-2 text-center">
+                    <i class="fas fa-coffee fa-2x text-secondary" aria-hidden="true"></i>
+                    <h5 class="mt-3 text-secondary">Free coffee bar</h5>
+                </div>
+                <div class="col-2 text-center">
+                    <i class="fas fa-id-card fa-2x text-secondary" aria-hidden="true"></i>
+                    <h5 class="mt-3 text-secondary">Profesional Team</h5>
+                </div>
+                <div class="col-2 text-center">
+                    <i class="fas fa-language fa-2x text-secondary" aria-hidden="true"></i>
+                    <h5 class="mt-3 text-secondary">Linguist</h5>
+                </div>
+                <div class="col-2 text-center">
+                    <i class="fas fa-rocket fa-2x text-secondary" aria-hidden="true"></i>
+                    <h5 class="mt-3 text-secondary">Hackers Spirit</h5>
+                </div>
+                <div class="col-2 text-center">
+                    <i class="fas fa-graduation-cap fa-2x text-secondary" aria-hidden="true"></i>
+                    <h5 class="mt-3 text-secondary">Self-Learning</h5>
+                </div>-->
+        </div>
+        </div>
+    </section>
+    <!-- introSection end -->
+    <!-- featuresSection -->
+    <section id="featuresSection" class=" py-5 bg-secondary text-white">
+        <div class="container ">
+            <h1 class="section-title mb-5 text-center">媒體作品</h1>
+            <!-- TODO: 設定row內的區塊置中對齊 -->
+            <div class="row justify-content-center">
+                <div class="col-sm-10 col-md-8">
+                    <!-- TODO: 為article1 article2 設置collapse互動方式 -->
+                    <button data-toggle="collapse" data-target=#article1 class="btn btn-primary">Team</button>
+                    <button data-toggle="collapse" data-target=#article2 class="btn btn-primary">Location</button>
+                    <article class="my-3 collapse show" id="article1">
+                        <h3>迴轉壽司店面</h3>
+                        <p>經過無數小時建立的壽司店面，從履帶，壽司到人一切由Illustrator繪畫，最後由After Effects組合。
+                            <strong></strong> </p>
+                    </article>
+                    <article class="my-3 collapse show" id="article2">
+                        <h3>Rotary sushi restaurant</h3>
+                        <p>After countless hours of establishment of the sushi restaurant, everything from crawlers,
+                            sushi to people is painted by Illustrator, and finally combined by After Effects.</p>
+                    </article>
+                    <!-- 導覽按鈕 -->
+                    <nav class="nav nav-pills justify-content-center">
+
+                        <a data-toggle="tab" class="nav-link active" href="#article3">Environment</a>
+                        <a data-toggle="tab" class="nav-link" href="#article4">Philosophy</a>
+                    </nav>
+
+
+                    <!-- TODO: 為article3 article4 設置tab互動方式 -->
+
+
+                    <!-- TODO: 崁入一個youtube影片 https://www.youtube.com/watch?v=gwDoRPcPxtc -->
+                    <iframe width="100%" height="440" src="https://www.youtube.com/embed/K4X07VMZ1hQ?start=19"
+                        frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- featuresSection end -->
+    <!-- reviewsSection -->
+    <section id="reviewsSection" class="py-5">
+        <!-- TODO: 使用輪播(Carousel)元件放入以下兩頁內容 -->
+        <div id="carouselId" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselId" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselId" data-slide-to="1"></li>
+
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active">
+                    <!-- 第一頁 內容 -->
+                    <div class="row justify-content-center py-5">
+                        <div class="col-sm-2">
+                            <!-- 設定使用者照片變圓型 -->
+                            <img class="w-100 rounded-circle" src="./img/未命名-4_工作區域 1_工作區域 1.png" alt="user photo">
+                        </div>
+                        <div class="col-sm-6">
+                            <h3 class="title">自我介紹</h3>
+                            <h4 class="name">大學學習過程</h4>
+                            <p>學科為創新產品設計學，學習分科為產品與文創設計，學習3D設計，AE影片，AI設計學習7~8年。</p>
+                        </div>
+                    </div>
+                    <!-- 第一頁 內容 結束 -->
+                </div>
+                <div class="carousel-item">
+                    <!-- 第二頁 內容 -->
+                    <div class="row justify-content-center py-5">
+                        <div class="col-sm-2">
+                            <!-- 設定使用者照片變圓型 -->
+                            <img class="w-100 rounded-circle" src="./img/未命名-4_工作區域 1_工作區域 1.png" alt="user photo">
+                        </div>
+                        <div class="col-sm-6">
+                            <h3 class="title">Self introduction</h3>
+                            <h4 class="name">University learning process</h4>
+                            <p>
+                                The subject is innovative product design, and the study sub-disciplines are product and
+                                cultural and creative design, learning 3D design, AE film, and AI design for 7-8 years.
+                            </p>
+                        </div>
+                        <!-- 第二頁 內容 結束 -->
+                    </div>
+
+                </div>
+                <a class="carousel-control-prev" href="#carouselId" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselId" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+
+
+            <a class="carousel-control-prev" href="#carouselId" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselId" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+    </section>
+    <!-- reviewsSection end -->
+    <!-- modalSection -->
+    <section id="modalSection" class="bg-secondary py-5">
+        <div class="row justify-content-center my-5">
+            <div class="col-md-3">
+                <h4 class="text-center text-white mb-4">New Version Released!</h4>
+                <!-- TODO: 設定點擊按鈕後顯示彈出式視窗 -->
+                <button class="btn btn-lg btn-block btn-primary" data-toggle="modal" data-target="#modelId"
+                    type="button">Open Modal!</button>
+                <!-- Modal -->
+                <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId"
+                    aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Modal title</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                Body
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- modalSection end -->
+            </div>
+        </div>
+    </section>
+    <!-- TODO: 加入彈出式視窗 Modal -->
+    <!-- Button trigger modal -->
+
+    <!-- Modal -->
+    <!-- Button trigger modal -->
+
+
+
+    <!-- gallerySection -->
+    <section id="gallerySection">
+        <div class="container-fluid">
+            <div class="row">
+                <div id="galleryImage1" class="col-md-3 col-sm-6">
+                    <div class="gallery-text">牛肉串</div>
+                </div>
+                <div id="galleryImage2" class="col-md-3 col-sm-6">
+                    <div class="gallery-text">天丼</div>
+                </div>
+                <div id="galleryImage3" class="col-md-3 col-sm-6">
+                    <div class="gallery-text">鮪魚刺身</div>
+                </div>
+                <div id="galleryImage4" class="col-md-3 col-sm-6">
+                    <div class="gallery-text">香菇味增湯</div>
+                </div>
+                <div id="galleryImage5" class="col-md-3 col-sm-6">
+                    <div class="gallery-text">漢堡排</div>
+                </div>
+                <div id="galleryImage6" class="col-md-3 col-sm-6">
+                    <div class="gallery-text">鮭魚刺身</div>
+                </div>
+                <div id="galleryImage7" class="col-md-3 col-sm-6">
+                    <div class="gallery-text">豬排丼</div>
+                </div>
+                <div id="galleryImage8" class="col-md-3 col-sm-6">
+                    <div class="gallery-text">羅宋湯</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- gallerySection end -->
+    <!--<iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14687.227195561303!2d120.21665145000001!3d23.030864949999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xbd36f9ab44cf4540!2z54mb6KeS5pel5pys54eS6IKJ5bCI6ZaA5bqXLeWPsOWNl-awuOW6t-aEm-iyt-W6lw!5e0!3m2!1szh-TW!2stw!4v1592464745052!5m2!1szh-TW!2stw"
+        width="100%" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+        tabindex="0"></iframe> -->
+    <!-- footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-sm-3 footer-list">
+                    <h4>Contact Us</h4>
+                    <a href="mailto:service@brand.com">service@brand.com</a>
+                </div>
+                <div class="col-6 col-sm-3 footer-list">
+                    <h5 class="text-uppercase">Company</h5>
+                    <ul>
+                        <li>
+                            <a href="#">Careers</a>
+                        </li>
+                        <li>
+                            <a href="#">About Us</a>
+                        </li>
+                        <li>
+                            <a href="#">Blog</a>
+                        </li>
+                        <li>
+                            <a href="#">Press</a>
+                        </li>
+                        <li>
+                            <a href="#">Bonus</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-6 col-sm-3 footer-list">
+                    <h5 class="text-uppercase">Product</h5>
+                    <ul>
+                        <li>
+                            <a href="#">Enterprice</a>
+                        </li>
+                        <li>
+                            <a href="#">Pricing</a>
+                        </li>
+                        <li>
+                            <a href="#">Security</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-6 col-sm-3 footer-list">
+                    <h5 class="text-uppercase">Resource</h5>
+                    <ul>
+                        <li>
+                            <a href="#">Guilde</a>
+                        </li>
+                        <li>
+                            <a href="#">Help Center</a>
+                        </li>
+                        <li>
+                            <a href="#">API</a>
+                        </li>
+                        <li>
+                            <a href="#">Events</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-end bg-dark">
+            <p class="text-center">&copy; Copy right 2020</p>
+        </div>
+    </footer>
+    <!-- footer end -->
+    <!-- ad-box -->
+    <div class="ad-box">
+        <div class="left-part">
+            <button class="ad-toggle-btn">
+                <i class="fas fa-sort"></i>
+            </button>
+        </div>
+        <div class="right-part">
+            <img class="w-100" src="./img/牌_工作區域 1.png">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores numquam ullam excepturi facilis aperiam.
+                Maiores mollitia nihil vitae ullam dolore?</p>
+        </div>
+    </div>
+    <!-- ad-box end -->
+    <!-- TODO: 設定置底返回按鈕 返回按鈕滾動動畫 -->
+    <button id="goBackBtn" href="#header" class="bg-primary">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- jquery.min.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- popper.min.js -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <!-- bootstrap.min.js -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+    </script>
+    <!-- 連結網頁主程式 -->
+    <script src="./js/main.js"></script>
+
+</body>
+
+</html>
